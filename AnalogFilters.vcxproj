@@ -140,10 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AnalogFilters.cpp" />
+    <ClCompile Include="Branch.cpp" />
     <ClCompile Include="Filters.cpp" />
     <ClCompile Include="OpAmps.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Branch.h" />
     <ClInclude Include="Filters.h" />
     <ClInclude Include="OpAmps.h" />
   </ItemGroup>

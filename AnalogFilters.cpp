@@ -5,6 +5,7 @@
 #include "Filters.h"
 #include "OpAmps.h"
 
+//Main function with temporary testing
 int main(int argc, char* argv)
 {
     std::cout << "Hello World!\n";
@@ -23,7 +24,8 @@ int main(int argc, char* argv)
     opamp.setVInput(10);
     opamp.setRInput(5);
     opamp.setROutput(10);
-    opamp.inverting();
-    std::cout << opamp.getGain() << std::endl;
+    opamp.nonInverting();
+    opamp.vOutputWithGain();
+    std::cout <<"Gain: "<< opamp.getGain() << "Vout: "<<opamp.getVOutput() << std::endl;
 }
 

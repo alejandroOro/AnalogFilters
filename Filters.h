@@ -1,8 +1,9 @@
 #pragma once
 #include <iostream>
+#include "Branch.h"
 #include <cmath>
 
-class Filters
+class Filters:public Branch
 {
 	private:
 		double resistance;

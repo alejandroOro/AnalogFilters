@@ -26,5 +26,6 @@ public:
 
 	void nonInverting();
 	void inverting();
+	void vOutputWithGain();
 };
 

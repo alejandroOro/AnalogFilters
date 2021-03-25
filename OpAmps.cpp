@@ -43,8 +43,21 @@ double OpAmps::getGain() {
 	return this->gain;
 }
 
+//Basic Opamp methods
+
 void OpAmps::inverting() {
 	int neg = -1;
 	double kNegative = (this->rOutput) * neg / (this->rInput);
-	this->gain = this->vInput * kNegative;
+	this->gain = kNegative;
+}
+
+void OpAmps::nonInverting() {
+
+	double kPositive = 1 + (this->rOutput / this->rInput);
+	this->gain = kPositive;
+}
+
+void OpAmps::vOutputWithGain() {
+
+	this->vOutput = this->gain*this->vInput;
 }
